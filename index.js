@@ -79,7 +79,7 @@ client.on('ready' , ()=> {
   });
 
   client.on('message', message => {
-    let PREFIX = "!";
+    let PREFIX = ".";
     if (message.content.split(' ')[0] == '/b')
     message.guild.members.forEach( member => {
 if (!message.member.hasPermission("ADMINISTRATOR"))  return;
@@ -93,7 +93,7 @@ message.delete();
 
 
 client.on('message', message => {
-  let PREFIX = "!";
+  let PREFIX = ".";
 if(message.content.startsWith(`${PREFIX}devmass`)) {
 if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
